@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Rose';
+  font-style: normal;
+}
+h3{
+  text-align: center;
+  justify-content: center;
+}
+.purple{
+  color:#A02279;
+}
+button{
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+}
+input{
+  box-sizing: border-box;
+  background: rgba(247, 247, 247, 0.1);
+  border: 1px solid #A3A3A3;
+  border-radius: 8px 0px 0px 8px;
+}
+.box{
+box-sizing: border-box;
+width: 286px;
+height: 372px;
+left: 316px;
+background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+border: 1px solid #D7D7D7;
+border-radius: 15px;
+}
+.banner{
+background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+
+}
