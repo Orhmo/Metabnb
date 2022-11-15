@@ -1,18 +1,21 @@
-
+import './index.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom';
 
+import Footer from "./Components/Footer";
+import NavBar from "./Components/NavBar";
 import Landing from "./Components/Home/Landing";
 import PlaceToStay from "./Components/Places/Place_to_stay";
-import Footer from "./Components/Footer";
 
 
 const App = () => {
   return (
-    <div className="Pages">
+    <div className="App">
+      <NavBar/>
+      <br/>
       <Router>
           <Routes>
             <Route path="/"
@@ -21,6 +24,7 @@ const App = () => {
               element={<PlaceToStay/>}/>
           </Routes>
       </Router>
+      <br/>
       <Footer/>
     </div>
 );
