@@ -18,6 +18,7 @@ import Fifteen from '../../Images/Nft_Places/15.svg';
 import Sixteen from '../../Images/Nft_Places/16.svg';
 
 import { FaStar } from 'react-icons/fa';
+import {VscSettings} from  'react-icons/vsc';
 
 const Place_to_stay = () => {
   const cards = [
@@ -86,8 +87,83 @@ const Place_to_stay = () => {
         src:Sixteen
       },
   ]
+
+  const sublinks = [
+    {
+      id: 1,
+      link:'Resturant'
+    },
+    {
+      id: 2,
+      link: 'Cottage'
+    },
+    {
+      id: 3,
+      link:'Castle'
+    },
+    {
+      id: 4,
+      link:'fantast city'
+    },
+    {
+      id: 5,
+      link:'beach'
+    },
+    {
+      id: 6,
+      link:'Carbins'
+    },
+    {
+      id: 7,
+      link:'Off-grid'
+    },
+    {
+      id: 8,
+      link:'Form'
+    },
+  ]
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:px-36 md:px-12 lg:px-4 duration-200 hover:scale=105">
+    <div className="mt-20">
+    <div className="justify-center flex flex-row">
+    <div className="pt-4">
+    <ul className="hidden md:flex">
+      {sublinks.map(({ id, link}) => (
+        <li
+          key={id}
+          className ="text-lg mb-6 leading-6 px-8 cursor-pointer hover:scale-105 duration 200"
+            >
+            {link}
+            </li>
+      ))}
+    </ul>
+    </div>
+
+    <div className="flex flex-row mb-4">
+    <select
+      id="places"
+      name="places"
+      className="flex md:hidden border border-black rounded-md w-auto sm:ml-12 m-2 p-2"
+      >
+      <option value=" " hidden>Places</option>
+      <option value="1">Resturant</option>
+      <option value="2">Cottage</option>
+      <option value="3">Castle</option>
+      <option value="4">fanstast city</option>
+      <option value="5">beach</option>
+      <option value="6">Carbins</option>
+      <option value="7">Off-grid</option>
+      <option value="8">Farm</option>
+    </select>
+
+    <a href="Location"
+      className="flex m-2 p-2 bg-white border border-black sm:mr-32 rounded-md w-auto">
+      Location  <span className="ml-2 pt-1 mr-2"><VscSettings/></span>
+    </a>
+    </div>
+
+    </div>
+
+  <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:px-36 md:px-12 lg:px-4 duration-200 hover:scale=105">
   {cards.map(({ id, src}) => (
     <div key={id}>
       <div className="cursor-pointer box m-2 p-4">
@@ -110,6 +186,7 @@ const Place_to_stay = () => {
       </div>
       </div>
     ))}
+</div>
 </div>
   )
 }
