@@ -132,11 +132,18 @@ const Landing = () => {
       </div>
       </div>
 
-      <div className="purple m-16 max-w-screen-xl flex flex-col items-center justify-between h-full  md:flex-row">
+      <div className="p-bg max-w-screen-xl flex flex-col items-center justify-between h-full  md:flex-row">
         <div className="flex flex-col justify-center h-full m-6 mx-auto">
-
-          <h2 className=" text-4xl sm-text-xl font-bold text-black">
+          <h2 className=" text-4xl sm-text-xl font-bold text-white m-2 justify-centre items-center">
             Metabnb Nfts </h2>
+            </div>
+            <div>
+            <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are
+            <br/>traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+          </div>
+          <div className="m-8" >
+          <a href=""
+          className="purple bg-white text-lg rounded-lg">Learn more</a>
           </div>
           <div className="mt-8 py-4 w-full md:px-12  md:w-1/2">
             <img

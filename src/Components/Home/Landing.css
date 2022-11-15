@@ -9,9 +9,6 @@ h3{
   text-align: center;
   justify-content: center;
 }
-.purple{
-  color:#A02279;
-}
 button{
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
   border-radius: 0px 8px 8px 0px;
@@ -21,6 +18,12 @@ input{
   background: rgba(247, 247, 247, 0.1);
   border: 1px solid #A3A3A3;
   border-radius: 8px 0px 0px 8px;
+}
+.purple{
+  color:#A02279;
+}
+.p-bg{
+  background-color:#A02279;
 }
 .box{
 box-sizing: border-box;
