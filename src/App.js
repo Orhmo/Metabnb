@@ -14,18 +14,18 @@ import PlaceToStay from "./Components/Places/PlaceToStay";
 const App = () => {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <br/>
       <Router>
           <Routes>
             <Route path="/"
-              element={<Home/>}/>
+              element={<Home />} />
             <Route path="/place_to_stay"
-              element={<PlaceToStay/>}/>
+              element={<PlaceToStay />} />
           </Routes>
       </Router>
       <br/>
-      <Footer/>
+      <Footer />
     </div>
 );
 }
