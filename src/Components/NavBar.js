@@ -9,23 +9,19 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      link:'Home',
-      href:'/'
+      link:'Home'
     },
     {
       id: 2,
-      link: 'Place to stay',
-      href: 'place_to_stay'
+      link: 'Place to stay'
     },
     {
       id: 3,
-      link:'NFTs',
-      href:'/'
+      link:'NFTs'
     },
     {
       id: 4,
-      link:'Community',
-      href:'/'
+      link:'Community'
     },
 
   ]
