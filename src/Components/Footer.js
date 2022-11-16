@@ -7,51 +7,54 @@ const Footer = () => {
   const about_us = ['Road map', 'Creators', 'Career', 'Contact us'];
 
   return (
-    <div className="flex bg-black text-white justify-between p-2 py-10">
-    <div className="mt-10 mx-8 align-center justify-center text-lg grid sm:grid-cols-2 md:grid-cols-4 md:mx-28 sm:mx-5 sm:p-5 ">
-      <div className="mb-2 ">
-      <img src="../Images/Footer/Logo.svg" alt="Metabnb Logo" className="my-4 w-32"/>
 
-        <div className="flex mt-16 justify-between w-[100px] ">
-            <span className="mr-4"><FaFacebookF/></span>
-            <span className="mr-4"><FaInstagram/></span>
-            <span className=""><FaTwitter/></span>
-          </div>
+<div className="bg-black text-white">
 
-          <div>
-          <p className="test-sm text-white m-4"> &#169; 2022 Metabnb</p>
-          </div>
+    <div className=" px-16 py-16 grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
 
-      </div>
+        <div>
+		<img src="../Images/Footer/Logo.svg"
+			alt="Metabnb Logo"
+            	classNmae="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400"/>
 
+              <div className="flex mt-16 justify-between w-[100px] ">
+                  <span className="mr-4"><FaFacebookF/></span>
+                  <span className="mr-4"><FaInstagram/></span>
+                  <span className=""><FaTwitter/></span>
+                </div>
 
-      <div className="mb-4 mx-40">
-        <p>Community</p>
-        {community.map((e) => (
-          <div className="text-[12px] mb-2">
+                <div>
+                <p className="test-sm text-white mt-4"> &#169; 2022 Metabnb</p>
+                </div>
+
+        </div>
+        <div>
+            <h2 class="mb-6 text-lg font-semibold text-white ">Community</h2>
+            {community.map((e) => (
+          <div className="text-[14px] mb-2">
             <span>{e}</span>
           </div>
         ))}
-      </div>
+	</div>
 
-      <div className="mb-4 mx-40">
-        <p>Places</p>
-        {places.map((e) => (
-          <div className="text-[12px] mb-2">
+        <div>
+            <h2 class="mb-6 text-lg font-semibold text-white">Places</h2>
+            {places.map((e) => (
+          <div className="text-[14px] mb-2">
             <span>{e}</span>
           </div>
         ))}
-      </div>
+        </div>
 
-      <div className="mb-4 mx-35">
-        <p>About Us</p>
-        {about_us.map((e) => (
-          <div className="text-[12px] mb-2">
+        <div>
+            <h2 class="mb-6 text-lg font-semibold text-white">About Us</h2>
+            {about_us.map((e) => (
+          <div className="text-[14px] mb-2">
             <span>{e}</span>
           </div>
         ))}
-      </div>
-      </div>
+        </div>
+    </div>
     </div>
   )
 }
