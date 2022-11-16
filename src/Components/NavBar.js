@@ -1,30 +1,19 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import Modal from './Modal/Modal.js';
 
 const NavBar = () => {
   const [openModal, setOpenModal] = useState(false);
   const [nav, setNav] = useState(false);
-  const links = [
-    {
-      id: 1,
-      link:'Home'
-    },
-    {
-      id: 2,
-      link: 'Place to stay'
-    },
-    {
-      id: 3,
-      link:'NFTs'
-    },
-    {
-      id: 4,
-      link:'Community'
-    },
+  const navigation = [
+    { name: "Home", href: "place_to_stay", current: true },
+    { name: "Place to stay", href: "place_to_stay", current: false },
+    { name: "NFTs", href: "place_to_stay", current: false },
+    { name: "Community", href: "place_to-_tay", current: false }
+  ];
 
-  ]
   return (
     <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 fixed bg-white">
       <div className="p-2">
@@ -35,14 +24,21 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link, href}) => (
-          <li
-            key={id}
-            className ="text-lg leading-6 px-4 cursor-pointer hover:scale-105 duration 200"
-              >
-              {link}
-              </li>
-        ))}
+      {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={classNames(
+                        item.current
+                          ? "border-b-2 border-fuchsia-800 text-black"
+                          : "text-black hover:border-b-2",
+                        "px-3 py-2 text-md font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
       </ul>
 
       <div>
