@@ -63,14 +63,21 @@ const NavBar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black">
-          {links.map(({ id, link}) => (
-            <li
-              key={id}
-              className =" px-4 py-6 text-4xl cursor-pointer hover:scale-105 duration 200"
-                >
-                {link}
-                </li>
-              ))}
+          {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={classNames(
+                        item.current
+                          ? "border-b-2 border-fuchsia-800 text-black"
+                          : "text-black hover:border-b-2",
+                        "px-3 py-2 text-md font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
             </ul>
       )}
 
