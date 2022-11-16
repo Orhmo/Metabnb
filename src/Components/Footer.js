@@ -7,9 +7,9 @@ const Footer = () => {
   const about_us = ['Road map', 'Creators', 'Career', 'Contact us'];
 
   return (
-    <div className="bg-black text-white grid sm:grid-cols-2 md:grid-cols-4 p-2 py-10">
+    <div className="flex bg-black text-white justify-between p-2 py-10">
     <div className="mt-10 mx-8 align-center text-lg flex md:mx-28">
-      <div className="mb-2">
+      <div className="mb-2 ">
       <img src="../Images/Footer/Logo.svg" alt="Metabnb Logo" className="my-4 w-32"/>
 
         <div className="flex mt-16 justify-between w-[100px] ">
@@ -19,13 +19,13 @@ const Footer = () => {
           </div>
 
           <div>
-          <p className="test-sm text-white m-2">&copy 2022 Metabnb</p>
+          <p className="test-sm text-white m-2"> &#169 2022 Metabnb</p>
           </div>
 
       </div>
 
 
-      <div className="mb-2">
+      <div className="mb-2 mx-40">
         <p>Community</p>
         {community.map((e) => (
           <div className="text-[12px] mb-2">
@@ -34,7 +34,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="mb-2">
+      <div className="mb-2 mx-40">
         <p>Places</p>
         {places.map((e) => (
           <div className="text-[12px] mb-2">
@@ -43,7 +43,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="mb-2">
+      <div className="mb-2 mx-40">
         <p>About Us</p>
         {about_us.map((e) => (
           <div className="text-[12px] mb-2">
