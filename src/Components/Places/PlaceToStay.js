@@ -123,7 +123,7 @@ const Place_to_stay = () => {
     },
   ]
   return (
-    <div className="mt-20">
+    <div className="mt-20 mx-16 my-16">
     <div className="justify-center flex flex-row">
     <div className="pt-4">
     <ul className="hidden md:flex">
