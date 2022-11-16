@@ -8,7 +8,7 @@ import {
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Landing from "./Components/Home/Landing";
-import PlaceToStay from "./Components/Places/Place_to_stay";
+import PlaceToStay from "./Components/Places/PlaceToStay";
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/"
               element={<Landing/>}/>
-            <Route path="/Place_to_stay"
+            <Route path="/place_to_stay"
               element={<PlaceToStay/>}/>
           </Routes>
       </Router>
