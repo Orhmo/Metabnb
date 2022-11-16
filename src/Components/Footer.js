@@ -18,8 +18,9 @@ const Footer = () => {
             <span className=""><FaTwitter/></span>
           </div>
 
-        <div>
-        <p className="test-sm text-white m-2">&copy 2022 Metabnb</p>
+          <div>
+          <p className="test-sm text-white m-2">&copy 2022 Metabnb</p>
+          </div>
       </div>
 
 
