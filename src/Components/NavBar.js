@@ -13,6 +13,10 @@ const NavBar = () => {
     { name: "NFTs", href: "place_to_stay", current: false },
     { name: "Community", href: "place_to-_tay", current: false }
   ];
+  
+  function classNames(...classes){
+    return classes.filter(Boolean).join(" ");
+  }
 
   return (
     <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 fixed bg-white">
