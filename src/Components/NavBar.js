@@ -15,7 +15,7 @@ const NavBar = () => {
     {
       id: 2,
       link: 'Place to stay',
-      href: '/place_to_stay'
+      href: 'place_to_stay'
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ const NavBar = () => {
       <div>
       <button
         onClick={() => setOpenModal(true)}
-        className="text-white text-sm w-fit px-2 py-1 my-1 rounded-lg">
+        className="text-white text-sm w-fit px-4 py-1 my-1 rounded-lg">
       Connect Wallet
       </button>
       <Modal open={openModal} onClose={() =>setOpenModal(false)}/>

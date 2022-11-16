@@ -7,7 +7,7 @@ const Footer = () => {
   const about_us = ['Road map', 'Creators', 'Career', 'Contact us'];
 
   return (
-    <div className="bg-black text-white grid sm:grid-cols-2 md:grid-cols-4 gap-20">
+    <div className="bg-black text-white grid sm:grid-cols-2 md:grid-cols-4">
     <div className="mt-10 mx-8 align-center text-lg flex justify-between md:mx-28">
       <div className="mb-2">
       <img src="../Images/Footer/Logo.svg" alt="Metabnb Logo" className="my-4 w-32"/>
