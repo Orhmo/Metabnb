@@ -10,7 +10,7 @@ const NavBar = () => {
 
 
   return (
-    <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 fixed bg-white">
+    <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 m-2 bg-white">
       <div className="p-2">
       <img
         src="./Images/Logos/Logo.svg"
