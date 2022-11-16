@@ -106,7 +106,7 @@ const Home = () => {
         <h3 className="font-bold text-3xl md:text-5xl m-8"> Inspiration for your next adventure</h3>
         </div>
 
-          <div className="cards grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12">
+          <div className="cards grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12  md:ml-[8vw] mr-auto sm:ml-[2vw]">
         {cards.map(({ id, src}) => (
           <div key={id}>
             <div className="cursor-pointer box m-2 p-4 duration-200 hover:scale-105 p-4">

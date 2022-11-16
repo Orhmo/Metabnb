@@ -163,11 +163,11 @@ const Place_to_stay = () => {
 
     </div>
 
-  <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:px-36 md:px-12 lg:px-4 duration-200 hover:scale=105">
+  <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 md:ml-[8vw] mr-auto sm:ml-[2vw]">
   {cards.map(({ id, src}) => (
     <div key={id}>
-      <div className="cursor-pointer box m-2 p-4">
-        <img src={src} alt="" className=" duration-200 hover:scale=105 p-4"/>
+      <div className="cursor-pointer box m-2 p-4 duration-200 hover:scale-105">
+        <img src={src} alt="" className=" duration-200 hover:scale-105 p-4"/>
         <div className="flex justify-between mt-2">
           <span className="text-[10px]">Desert King</span>
           <p className="text-[10px] font-bold"> 1MBT per night</p>
