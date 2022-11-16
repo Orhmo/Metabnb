@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className="flex bg-black text-white justify-between p-2 py-10">
-    <div className="mt-10 mx-8 align-center justify-center text-lg flex md:mx-28 grid sm:grid-cols-2 md:grid-cols-4">
+    <div className="mt-10 mx-8 align-center justify-center text-lg flex md:mx-28 grid sm:grid-cols-2 sm:mt-4">
       <div className="mb-2 ">
       <img src="../Images/Footer/Logo.svg" alt="Metabnb Logo" className="my-4 w-32"/>
 
