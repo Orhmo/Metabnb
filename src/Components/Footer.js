@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className="flex bg-black text-white justify-between p-2 py-10">
-    <div className="mt-10 mx-8 align-center text-lg flex md:mx-28">
+    <div className="mt-10 mx-8 align-center justify-center text-lg flex md:mx-28">
       <div className="mb-2 ">
       <img src="../Images/Footer/Logo.svg" alt="Metabnb Logo" className="my-4 w-32"/>
 
@@ -19,13 +19,13 @@ const Footer = () => {
           </div>
 
           <div>
-          <p className="test-sm text-white m-2"> &#169 2022 Metabnb</p>
+          <p className="test-sm text-white m-4"> &#169; 2022 Metabnb</p>
           </div>
 
       </div>
 
 
-      <div className="mb-2 mx-40">
+      <div className="mb-4 mx-40">
         <p>Community</p>
         {community.map((e) => (
           <div className="text-[12px] mb-2">
@@ -34,7 +34,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="mb-2 mx-40">
+      <div className="mb-4 mx-40">
         <p>Places</p>
         {places.map((e) => (
           <div className="text-[12px] mb-2">
@@ -43,7 +43,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="mb-2 mx-40">
+      <div className="mb-4 mx-35">
         <p>About Us</p>
         {about_us.map((e) => (
           <div className="text-[12px] mb-2">
