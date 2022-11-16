@@ -26,7 +26,7 @@ const Modal = ({open, onClose}) => {
             </a>
           </div>
           <div>
-            <a href="Button className="modalBtn mt-3 border rounded-md bg-white inline-flex border-gray-200 w-full justify-between font-mediun text-black px-4 py-2 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 sm:mt-4 sm:text-sm">
+            <a href="Button" className="modalBtn mt-3 border rounded-md bg-white inline-flex border-gray-200 w-full justify-between font-mediun text-black px-4 py-2 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 sm:mt-4 sm:text-sm">
               <img src={Connect} alt="Wallet logo"/>
               <span className="mx-2 my-2">Wallet connect</span>
               <MdOutlineArrowForwardIos className="mx-2 my-2"/>
