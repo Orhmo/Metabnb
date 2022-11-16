@@ -1,22 +1,13 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 import Modal from './Modal/Modal.js';
 
 const NavBar = () => {
   const [openModal, setOpenModal] = useState(false);
   const [nav, setNav] = useState(false);
-  const navigation = [
-    { name: "Home", href: "place_to_stay", current: true },
-    { name: "Place to stay", href: "place_to_stay", current: false },
-    { name: "NFTs", href: "place_to_stay", current: false },
-    { name: "Community", href: "place_to-_tay", current: false }
-  ];
   
-  function classNames(...classes){
-    return classes.filter(Boolean).join(" ");
-  }
 
   return (
     <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 fixed bg-white">
@@ -28,21 +19,10 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-      {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className={classNames(
-                        item.current
-                          ? "border-b-2 border-fuchsia-800 text-black"
-                          : "text-black hover:border-b-2",
-                        "px-3 py-2 text-md font-medium"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/place_to_stay">Place to Stay</NavLink></li>
+        <li>NFTs</li>
+        <li>Community</li>
       </ul>
 
       <div>
@@ -63,22 +43,11 @@ const NavBar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black">
-          {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className={classNames(
-                        item.current
-                          ? "border-b-2 border-fuchsia-800 text-black"
-                          : "text-black hover:border-b-2",
-                        "px-3 py-2 text-md font-medium"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-            </ul>
+         <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/place_to_stay">Place to Stay</NavLink></li>
+          <li>NFTs</li>
+          <li>Community</li>
+        </ul>
       )}
 
     </div>
