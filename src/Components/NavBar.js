@@ -7,7 +7,7 @@ import Modal from './Modal/Modal.js';
 const NavBar = () => {
   const [openModal, setOpenModal] = useState(false);
   const [nav, setNav] = useState(false);
-  
+
 
   return (
     <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 fixed bg-white">
@@ -19,10 +19,10 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/place_to_stay">Place to Stay</NavLink></li>
-        <li>NFTs</li>
-        <li>Community</li>
+        <li className="m-2"><NavLink to="/">Home</NavLink></li>
+        <li  className="m-2"><NavLink to="/place_to_stay">Place to Stay</NavLink></li>
+        <li  className="m-2">NFTs</li>
+        <li  className="m-2">Community</li>
       </ul>
 
       <div>
