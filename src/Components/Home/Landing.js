@@ -132,28 +132,27 @@ const Landing = () => {
       </div>
       </div>
 
-      <div className="p-bg max-w-screen-xl flex flex-col items-center justify-between h-full  md:flex-row">
-        <div className="flex flex-col justify-center h-full m-6 mx-auto">
-          <h2 className=" text-4xl sm-text-xl font-bold text-white m-2 justify-centre items-center">
-            Metabnb Nfts </h2>
-            </div>
-            <div>
-            <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are
-            <br/>traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+      <div className="p-bg p-8 md:justify-between md:flex-row">
+        <div className="flex flex-cols mb-10 md:mx-20 md:my-24 ">
+          <div>
+          <h2 className=" text-4xl sm-text-xl font-bold text-white m-2">
+            Metabnb NFTs </h2>
+            <p className="my-2 p-2 md:mb-4 text-white text-sm">Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are
+            traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+
+          <a href="Learn"
+          className=" m-4 purple bg-white text-lg rounded-lg px-4 py-2 w-1/3">Learn more</a>
           </div>
-          <div className="m-8" >
-          <a href=""
-          className="purple bg-white text-lg rounded-lg">Learn more</a>
-          </div>
-          <div className="mt-8 py-4 w-full md:px-12  md:w-1/2">
+
+          <div className="py-4 w-full">
             <img
               src="../../Images/Home/hero-image_2.svg"
               alt="home"
               />
           </div>
-      </div>
+        </div>
+        </div>
     </div>
-
   )
 }
 export default Landing;

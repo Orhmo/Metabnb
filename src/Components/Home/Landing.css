@@ -24,6 +24,7 @@ input{
 }
 .p-bg{
   background-color:#A02279;
+  width: 100vw;
 }
 .box{
 box-sizing: border-box;
