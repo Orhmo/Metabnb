@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import Modal from './Modal/Modal.js';
+
 const NavBar = () => {
+  const [openModal, setOpenModal] = useState(false);
   const [nav, setNav] = useState(false);
   const links = [
     {
       id: 1,
-      link:'Home'
+      link:'Home',
+      href:'/'
     },
     {
       id: 2,
-      link: 'Place to stay'
+      link: 'Place to stay',
+      href: '/place_to_stay'
     },
     {
       id: 3,
-      link:'NFTs'
+      link:'NFTs',
+      href:'/'
     },
     {
       id: 4,
-      link:'Community'
+      link:'Community',
+      href:'/'
     },
 
   ]
@@ -32,7 +39,7 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link}) => (
+        {links.map(({ id, link, href}) => (
           <li
             key={id}
             className ="text-lg leading-6 px-4 cursor-pointer hover:scale-105 duration 200"
@@ -42,10 +49,14 @@ const NavBar = () => {
         ))}
       </ul>
 
+      <div>
       <button
-        className="text-white text-sm w-fit px-4 py-1 my-1 rounded-lg">
+        onClick={() => setOpenModal(true)}
+        className="text-white text-sm w-fit px-2 py-1 my-1 rounded-lg">
       Connect Wallet
       </button>
+      <Modal open={openModal} onClose={() =>setOpenModal(false)}/>
+      </div>
 
       <div
         onClick={() => setNav(!nav)}

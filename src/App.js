@@ -7,7 +7,7 @@ import {
 
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
-import Landing from "./Components/Home/Landing";
+import Home from "./Components/Home/Home";
 import PlaceToStay from "./Components/Places/PlaceToStay";
 
 
@@ -19,7 +19,7 @@ const App = () => {
       <Router>
           <Routes>
             <Route path="/"
-              element={<Landing/>}/>
+              element={<Home/>}/>
             <Route path="/place_to_stay"
               element={<PlaceToStay/>}/>
           </Routes>

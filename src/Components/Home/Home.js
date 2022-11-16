@@ -1,4 +1,4 @@
-import './Landing.css';
+import './Home.css';
 import React from 'react';
 
 import One from '../../Images/Nft_Places/5.svg';
