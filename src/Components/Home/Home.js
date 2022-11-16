@@ -12,7 +12,7 @@ import Eight from '../../Images/Nft_Places/4.svg';
 
 import { FaStar } from 'react-icons/fa';
 
-const Landing = () => {
+const Home = () => {
     const cards = [
       {
         id:1,
@@ -155,4 +155,4 @@ const Landing = () => {
     </div>
   )
 }
-export default Landing;
+export default Home;
